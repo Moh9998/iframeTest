@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en"><!DOCTYPE html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <style>
+        body {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .img {
+            width: 100%;
+            object-fit: contain;
+        }
+
+        .img_bg_container {
+            width: 100%;
+            height: fit-content;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+
+        .voice_box {
+            position: absolute;
+            width: 120px;
+            padding: 5px;
+            border: 1px solid;
+        }
+
+        @media (min-width:1024px) {
+            .img_bg_container {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+
+
+
+    <body>
+        <section class="img_bg_container">
+            <img class="img" src="https://learner.ta3leem.iq/asset-v1:Ta3leem+1+2022_2023+type@asset+block@كتاب_العلوم_الاول_الابتدائي-min-030.jpg">
+        
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; height: 5.75315%; left: 16.9689%; top: 9.36941%; width: 65.086%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 3.28751%; left: 59.7397%; top: 17.5882%; width: 27.894%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: se-resize; height: 2.63001%; left: 46.0251%; top: 20.7113%; width: 41.6086%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: s-resize; height: 3.78064%; left: 34.4026%; top: 23.177%; width: 53.2311%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: w-resize; height: 4.27377%; left: 69.2701%; top: 80.8728%; width: 20.9205%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: w-resize; height: 5.09565%; left: 26.0344%; top: 85.4754%; width: 63.6913%;"></div>
+                 </section>
+        <section class="img_bg_container">
+            <img class="img" src="https://learner.ta3leem.iq/asset-v1:Ta3leem+1+2022_2023+type@asset+block@كتاب_العلوم_الاول_الابتدائي-min-031.jpg">
+        
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: w-resize; height: 4.60252%; left: 61.3668%; top: 2.63001%; width: 17.2013%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: w-resize; height: 4.27377%; left: 33.7053%; top: 8.21878%; width: 52.7662%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: s-resize; top: 15.2869%; height: 4.43814%; left: 64.3887%; width: 15.5742%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: w-resize; height: 14.1363%; left: 37.8894%; top: 21.3688%; width: 47.1874%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: s-resize; height: 4.27377%; left: 59.9721%; top: 35.5051%; width: 27.894%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 3.45189%; left: 50.2092%; top: 41.0939%; width: 38.1218%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; height: 7.72566%; left: 38.3543%; top: 44.5458%; width: 49.9768%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: sw-resize; height: 3.94502%; left: 43.9331%; top: 52.2715%; width: 44.6304%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; height: 4.60252%; left: 10.4603%; top: 13.3144%; width: 25.3371%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; height: 3.12314%; left: 13.0172%; top: 46.6827%; width: 21.6179%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: w-resize; height: 2.79439%; left: 30.451%; top: 24.1632%; width: 5.1139%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; left: 64.1562%; top: 80.8728%; height: 3.78064%; width: 20.9205%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 7.56128%; left: 10.4603%; top: 85.1466%; width: 77.6383%;"></div>
+                 </section>
+        <section class="img_bg_container">
+            <img class="img" src="https://learner.ta3leem.iq/asset-v1:Ta3leem+1+2022_2023+type@asset+block@كتاب_العلوم_الاول_الابتدائي-min-032.jpg">
+        
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; height: 4.60252%; left: 69.0377%; top: 7.72566%; width: 18.8285%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; height: 3.78064%; left: 72.0595%; top: 12.4926%; width: 14.4119%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: w-resize; height: 11.0132%; left: 69.0377%; top: 16.2732%; width: 19.2934%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: w-resize; left: 69.0377%; top: 27.4507%; height: 2.95876%; width: 19.7583%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: w-resize; height: 2.79439%; left: 78.3357%; top: 30.9026%; width: 10.6927%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: nw-resize; height: 2.30126%; width: 15.3417%; top: 38.6283%; left: 74.1516%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: sw-resize; height: 7.06815%; left: 72.7569%; top: 41.9158%; width: 16.9689%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: nw-resize; height: 4.27377%; left: 31.6132%; top: 6.24628%; width: 32.3106%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; height: 11.6707%; left: 11.855%; top: 11.1775%; width: 52.3013%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 2.95876%; left: 19.2934%; top: 89.0916%; width: 53.9284%;"></div>
+                 </section>
+        <section class="img_bg_container">
+            <img class="img" src="https://learner.ta3leem.iq/asset-v1:Ta3leem+1+2022_2023+type@asset+block@كتاب_العلوم_الاول_الابتدائي-min-033.jpg">
+        
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: s-resize; height: 6.57503%; left: 7.67085%; top: 5.58877%; width: 82.0549%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; left: 33.2404%; top: 48.4908%; height: 2.23551%; width: 26.2669%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; left: 30.451%; top: 83.8316%; width: 27.894%; height: 1.90676%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; left: 73.9191%; top: 84.6535%; height: 3.71489%; width: 14.1795%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 4.86552%; left: 37.6569%; top: 88.1054%; width: 34.4026%;"></div>
+                 </section>
+        <section class="img_bg_container">
+            <img class="img" src="https://learner.ta3leem.iq/asset-v1:Ta3leem+1+2022_2023+type@asset+block@كتاب_العلوم_الاول_الابتدائي-min-034.jpg">
+        
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: s-resize; left: 54.6258%; top: 6.0819%; height: 3.22176%; width: 33.7053%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; left: 45.0953%; top: 9.86254%; height: 9.13929%; width: 45.5602%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: w-resize; height: 3.05739%; left: 31.1483%; top: 7.06815%; width: 9.06555%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; height: 4.20596%; left: 31.1483%; top: 9.86254%; width: 8.8331%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: e-resize; height: 4.20802%; left: 12.0874%; top: 9.86254%; width: 19.2934%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: s-resize; height: 7.33116%; left: 8.13575%; top: 22.0263%; width: 82.9847%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: nw-resize; height: 3.87927%; left: 12.0874%; top: 46.1896%; width: 17.8987%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: e-resize; height: 3.55051%; left: 74.6165%; top: 75.7772%; width: 15.8066%;"></div>
+                 </section>
+        <section class="img_bg_container">
+            <img class="img" src="https://learner.ta3leem.iq/asset-v1:Ta3leem+1+2022_2023+type@asset+block@كتاب_العلوم_الاول_الابتدائي-min-035.jpg">
+        
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: sw-resize; height: 3.38614%; left: 74.8489%; top: 6.41065%; width: 15.5742%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: s-resize; height: 3.38614%; left: 36.2622%; top: 8.21878%; width: 27.894%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 3.38614%; left: 72.7569%; top: 45.0389%; width: 15.3417%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; height: 4.86552%; left: 19.7583%; top: 48.4908%; width: 49.2794%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: nw-resize; height: 3.71489%; left: 65.086%; top: 54.7371%; width: 22.5477%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 2.72864%; left: 51.3715%; top: 59.504%; width: 36.9596%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: w-resize; height: 3.38614%; left: 34.8675%; top: 62.2984%; width: 53.4635%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; left: 51.8364%; top: 65.5859%; height: 3.22176%; width: 36.4947%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 3.38614%; left: 65.3185%; top: 84.8179%; width: 16.0391%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 3.71489%; left: 16.504%; top: 84.8179%; width: 48.3496%;"></div>
+                 </section>
+        <section class="img_bg_container">
+            <img class="img" src="https://learner.ta3leem.iq/asset-v1:Ta3leem+1+2022_2023+type@asset+block@كتاب_العلوم_الاول_الابتدائي-min-036.jpg">
+        
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 4.20802%; left: 68.8052%; top: 6.90378%; width: 21.3854%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 3.38614%; left: 64.3887%; top: 13.3144%; width: 23.7099%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 9.96117%; left: 56.2529%; top: 16.4376%; width: 34.8675%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; height: 13.7418%; left: 56.2529%; top: 26.3001%; width: 34.8675%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 10.783%; left: 55.5556%; top: 41.7514%; width: 35.5649%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: s-resize; height: 4.04364%; left: 76.4761%; top: 80.051%; width: 13.2497%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: ne-resize; height: 7.0024%; left: 25.1046%; top: 81.8591%; width: 50.2092%;"></div>
+                 </section>
+        <section class="img_bg_container">
+            <img class="img" src="https://learner.ta3leem.iq/asset-v1:Ta3leem+1+2022_2023+type@asset+block@كتاب_العلوم_الاول_الابتدائي-min-037.jpg">
+        
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; left: 36.0298%; top: 4.43814%; height: 3.87927%; width: 27.894%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: nw-resize; top: 9.36941%; height: 2.89301%; left: 77.6383%; width: 12.5523%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: s-resize; height: 3.22176%; left: 40.9112%; top: 12.8213%; width: 49.2794%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: s-resize; height: 4.04364%; left: 61.1344%; top: 73.3116%; width: 27.894%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; height: 3.87927%; left: 51.6039%; top: 77.0922%; width: 37.4245%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: sw-resize; height: 3.38614%; left: 73.4542%; top: 80.8728%; width: 15.5742%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: sw-resize; height: 3.38614%; left: 56.2529%; top: 84.3247%; width: 33.0079%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: nw-resize; height: 3.55051%; left: 38.5867%; top: 81.0372%; width: 34.6351%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 3.38614%; left: 28.8238%; top: 84.3247%; width: 27.894%;"></div>
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize;
+                 height: 46.38614%;
+                 left: 10.8238%;
+                 top: 24.3247%;
+                 width: 77.894%;"></div>
+                 </section>
+        <section class="img_bg_container">
+            <img class="img" src="https://learner.ta3leem.iq/asset-v1:Ta3leem+1+2022_2023+type@asset+block@كتاب_العلوم_الاول_الابتدائي-min-038.jpg">
+        
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: w-resize; height: 3.55051%; left: 35.1%; top: 4.60252%; width: 27.894%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 2.89301%; left: 71.3622%; top: 10.0269%; width: 18.596%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; left: 12.7848%; top: 9.69817%; height: 3.71489%; width: 58.345%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 3.87927%; left: 69.9675%; top: 85.9685%; width: 19.9907%;"></div>
+                 
+                 <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; height: 4.20802%; left: 28.1265%; top: 85.8041%; width: 42.0735%;"></div>
+                 </section>
+    
+    
+       
+ <script>
+
+    function playrootVideo(videoId) {
+        var rVideo = document.getElementById(videoId);
+        var pic = document.getElementById('rootw');
+
+        rVideo.play();
+        pic.style.backgroundColor = 'white';
+        rVideo.style.display = "block";
+
+
+
+    }
+</script>
+
+
+<!-- video animation function -->
+    <script>
+function playHiddenVideo(videoId) {
+var video = document.getElementById(videoId);
+
+// Create backdrop overlay
+var backdrop = document.createElement('div');
+backdrop.style.position = 'fixed';
+backdrop.style.top = '0';
+backdrop.style.left = '0';
+backdrop.style.width = '100%';
+backdrop.style.height = '100%';
+backdrop.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; // Adjust the transparency as desired
+backdrop.style.zIndex = '9999';
+document.body.appendChild(backdrop);
+
+// Play the video
+video.play();
+
+// Set video properties
+var videoSize = Math.min(window.innerWidth, window.innerHeight) * 0.6; // Adjust the size as desired
+var videoMargin = videoSize / 2;
+
+// Center the video on the page
+video.style.display = 'block';
+video.style.position = 'fixed';
+video.style.width = videoSize + 'px';
+video.style.height = videoSize + 'px';
+video.style.top = '50%';
+video.style.left = '50%';
+video.style.transform = 'translate(-50%, -50%)';
+video.style.zIndex = '10000';
+
+var closeButton = document.createElement('button');
+closeButton.innerHTML = 'اغلاق';
+closeButton.style.position = 'fixed';
+closeButton.style.top = '10px';
+closeButton.style.right = '10px';
+closeButton.style.zIndex = '10001';
+closeButton.onclick = closeVideo;
+document.body.appendChild(closeButton);
+
+// Listen for the 'ended' event
+
+        function closeVideo() {
+//player.pauseVideo();
+document.body.removeChild(backdrop);
+document.body.removeChild(closeButton);
+video.pause ();
+video.style.display = 'none';
+}
+}
+
+    </script>
+<!-- iframe -->
+    <script>
+function showIframe(id) {
+var iframe = document.getElementById(id);
+
+// Create backdrop overlay
+var backdrop = document.createElement('div');
+backdrop.style.position = 'fixed';
+backdrop.style.top = '0';
+backdrop.style.left = '0';
+backdrop.style.width = '100%';
+backdrop.style.height = '100%';
+backdrop.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+backdrop.style.zIndex = '9999';
+document.body.appendChild(backdrop);
+var closeButton = document.createElement('button');
+closeButton.innerHTML = 'اغلاق';
+closeButton.style.position = 'fixed';
+closeButton.style.top = '10px';
+closeButton.style.right = '10px';
+closeButton.style.zIndex = '10001';
+closeButton.onclick = closeIframe;
+document.body.appendChild(closeButton);
+
+// Center the iframe on the page
+iframe.style.display = 'block';
+iframe.style.position = 'fixed';
+iframe.style.top = '50%';
+iframe.style.left = '50%';
+iframe.style.width = '95%';
+iframe.style.height = '95%';
+iframe.style.transform = 'translate(-50%, -50%)';
+iframe.style.zIndex = '10000';
+// Function to close the iframe and remove the backdrop
+function closeIframe() {
+//player.pauseVideo();
+document.body.removeChild(backdrop);
+document.body.removeChild(closeButton);
+iframe.style.display = 'none';
+}
+
+// Listen for the 'ended' event on the iframe's contentWindow
+    closeButton.addEventListener('click', closeIframe);
+}
+
+    </script>
+    <script>
+        function resizeBackgroundImages() {
+            // Get all elements with class 'img'
+            let imgElements = document.querySelectorAll('.img_fr');
+            // Loop through each element
+            imgElements.forEach(function(element) {
+                // Get the height and width of the element
+                let height = element.offsetHeight;
+                let width = element.offsetWidth;
+                // Get all elements with class 'row'
+                let rowElements = document.querySelectorAll('.img_bg_container');
+                // Loop through each element
+                rowElements.forEach(function(rowElement) {
+                // Set the background size of the element to the height and width of the 'img' element
+                rowElement.style.backgroundSize = width + "px " + height + "px";
+                });
+            });
+        }
+        window.addEventListener('load', resizeBackgroundImages);
+    </script>
+<!-- pictures script -->
+    <script>
+            function showPictureWithAudio(imageId, audioId) {
+    // Create backdrop overlay
+    var backdrop = document.createElement('div');
+    backdrop.style.position = 'fixed';
+    backdrop.style.top = '0';
+    backdrop.style.left = '0';
+    backdrop.style.width = '100%';
+    backdrop.style.height = '100%';
+    backdrop.style.backgroundColor = 'rgba(0, 0, 0, 0.95)';
+    backdrop.style.zIndex = '9999';
+    document.body.appendChild(backdrop);
+
+    // Get image and audio elements by ID
+    var image = document.getElementById(imageId);
+    var audio = document.getElementById(audioId);
+
+    // Set image styles
+    image.style.display = 'none';
+    image.style.position = 'fixed';
+    image.style.top = '50%';
+    image.style.left = '50%';
+    image.style.transform = 'translate(-50%, -50%)';
+    image.style.zIndex = '10000';
+
+    // Event listener for audio ended
+        function close_audio() {
+            // Hide the image
+            image.style.display = 'none';
+
+            // Remove the backdrop
+            document.body.removeChild(backdrop);
+
+            audio.pause
+
+            document.body.removeChild(closeButton);
+
+        };
+
+    // Event listener for audio play
+    audio.addEventListener('play', function() {
+        // Show the image
+        image.style.display = 'block';
+    });
+
+    // Play the audio
+    audio.play();
+
+    var closeButton = document.createElement('button');
+    closeButton.innerHTML = 'اغلاق';
+    closeButton.style.position = 'fixed';
+    closeButton.style.top = '10px';
+    closeButton.style.right = '10px';
+    closeButton.style.zIndex = '10001';
+    closeButton.onclick = close_audio;
+    document.body.appendChild(closeButton);
+        }
+
+
+
+
+
+    </script>
+    <!-- vioce scripts -->
+    <script>
+        function replayAudio(id) {
+        // Pause all audio elements
+        var audioElements = document.getElementsByTagName('audio');
+        for (var i = 0; i < audioElements.length; i++) {
+            var audio = audioElements[i];
+            if (audio !== null && audio.id !== id) {
+            audio.pause();
+            }
+        }
+
+        // Replay the selected audio
+        var selectedAudio = document.getElementById(id);
+        if (selectedAudio !== null) {
+            selectedAudio.currentTime = 0;
+            selectedAudio.play();
+        }
+        }
+
+    </script>
+
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/tgs-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@1.5.7/dist/lottie-player.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+    </body>
+ 
+</html>
+
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+
+    <style>
+        body {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .img {
+            width: 100%;
+            object-fit: contain;
+        }
+
+        .img_bg_container {
+            width: 100%;
+            height: fit-content;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+
+        .voice_box {
+            position: absolute;
+            width: 120px;
+            padding: 5px;
+            border: 1px solid;
+        }
+
+        @media (min-width:1024px) {
+            .img_bg_container {
+                width: 50%;
+            }
+        }
+    </style>
+
+
+
+
+
+    <section class="img_bg_container">
+        <img class="img" src="https://learner.ta3leem.iq/asset-v1:Ta3leem+1+2022_2023+type@asset+block@كتاب_العلوم_الاول_الابتدائي-min-030.jpg">
+    
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; height: 5.75315%; left: 16.9689%; top: 9.36941%; width: 65.086%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 3.28751%; left: 59.7397%; top: 17.5882%; width: 27.894%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: se-resize; height: 2.63001%; left: 46.0251%; top: 20.7113%; width: 41.6086%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: s-resize; height: 3.78064%; left: 34.4026%; top: 23.177%; width: 53.2311%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: w-resize; height: 4.27377%; left: 69.2701%; top: 80.8728%; width: 20.9205%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: w-resize; height: 5.09565%; left: 26.0344%; top: 85.4754%; width: 63.6913%;"></div>
+             </section>
+    <section class="img_bg_container">
+        <img class="img" src="https://learner.ta3leem.iq/asset-v1:Ta3leem+1+2022_2023+type@asset+block@كتاب_العلوم_الاول_الابتدائي-min-031.jpg">
+    
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: w-resize; height: 4.60252%; left: 61.3668%; top: 2.63001%; width: 17.2013%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: w-resize; height: 4.27377%; left: 33.7053%; top: 8.21878%; width: 52.7662%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: s-resize; top: 15.2869%; height: 4.43814%; left: 64.3887%; width: 15.5742%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: w-resize; height: 14.1363%; left: 37.8894%; top: 21.3688%; width: 47.1874%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: s-resize; height: 4.27377%; left: 59.9721%; top: 35.5051%; width: 27.894%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 3.45189%; left: 50.2092%; top: 41.0939%; width: 38.1218%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; height: 7.72566%; left: 38.3543%; top: 44.5458%; width: 49.9768%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: sw-resize; height: 3.94502%; left: 43.9331%; top: 52.2715%; width: 44.6304%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; height: 4.60252%; left: 10.4603%; top: 13.3144%; width: 25.3371%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; height: 3.12314%; left: 13.0172%; top: 46.6827%; width: 21.6179%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: w-resize; height: 2.79439%; left: 30.451%; top: 24.1632%; width: 5.1139%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; left: 64.1562%; top: 80.8728%; height: 3.78064%; width: 20.9205%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 7.56128%; left: 10.4603%; top: 85.1466%; width: 77.6383%;"></div>
+             </section>
+    <section class="img_bg_container">
+        <img class="img" src="https://learner.ta3leem.iq/asset-v1:Ta3leem+1+2022_2023+type@asset+block@كتاب_العلوم_الاول_الابتدائي-min-032.jpg">
+    
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; height: 4.60252%; left: 69.0377%; top: 7.72566%; width: 18.8285%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; height: 3.78064%; left: 72.0595%; top: 12.4926%; width: 14.4119%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: w-resize; height: 11.0132%; left: 69.0377%; top: 16.2732%; width: 19.2934%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: w-resize; left: 69.0377%; top: 27.4507%; height: 2.95876%; width: 19.7583%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: w-resize; height: 2.79439%; left: 78.3357%; top: 30.9026%; width: 10.6927%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: nw-resize; height: 2.30126%; width: 15.3417%; top: 38.6283%; left: 74.1516%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: sw-resize; height: 7.06815%; left: 72.7569%; top: 41.9158%; width: 16.9689%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: nw-resize; height: 4.27377%; left: 31.6132%; top: 6.24628%; width: 32.3106%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; height: 11.6707%; left: 11.855%; top: 11.1775%; width: 52.3013%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 2.95876%; left: 19.2934%; top: 89.0916%; width: 53.9284%;"></div>
+             </section>
+    <section class="img_bg_container">
+        <img class="img" src="https://learner.ta3leem.iq/asset-v1:Ta3leem+1+2022_2023+type@asset+block@كتاب_العلوم_الاول_الابتدائي-min-033.jpg">
+    
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: s-resize; height: 6.57503%; left: 7.67085%; top: 5.58877%; width: 82.0549%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; left: 33.2404%; top: 48.4908%; height: 2.23551%; width: 26.2669%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; left: 30.451%; top: 83.8316%; width: 27.894%; height: 1.90676%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; left: 73.9191%; top: 84.6535%; height: 3.71489%; width: 14.1795%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 4.86552%; left: 37.6569%; top: 88.1054%; width: 34.4026%;"></div>
+             </section>
+    <section class="img_bg_container">
+        <img class="img" src="https://learner.ta3leem.iq/asset-v1:Ta3leem+1+2022_2023+type@asset+block@كتاب_العلوم_الاول_الابتدائي-min-034.jpg">
+    
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: s-resize; left: 54.6258%; top: 6.0819%; height: 3.22176%; width: 33.7053%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; left: 45.0953%; top: 9.86254%; height: 9.13929%; width: 45.5602%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: w-resize; height: 3.05739%; left: 31.1483%; top: 7.06815%; width: 9.06555%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; height: 4.20596%; left: 31.1483%; top: 9.86254%; width: 8.8331%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: e-resize; height: 4.20802%; left: 12.0874%; top: 9.86254%; width: 19.2934%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: s-resize; height: 7.33116%; left: 8.13575%; top: 22.0263%; width: 82.9847%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: nw-resize; height: 3.87927%; left: 12.0874%; top: 46.1896%; width: 17.8987%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: e-resize; height: 3.55051%; left: 74.6165%; top: 75.7772%; width: 15.8066%;"></div>
+             </section>
+    <section class="img_bg_container">
+        <img class="img" src="https://learner.ta3leem.iq/asset-v1:Ta3leem+1+2022_2023+type@asset+block@كتاب_العلوم_الاول_الابتدائي-min-035.jpg">
+    
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: sw-resize; height: 3.38614%; left: 74.8489%; top: 6.41065%; width: 15.5742%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: s-resize; height: 3.38614%; left: 36.2622%; top: 8.21878%; width: 27.894%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 3.38614%; left: 72.7569%; top: 45.0389%; width: 15.3417%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; height: 4.86552%; left: 19.7583%; top: 48.4908%; width: 49.2794%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: nw-resize; height: 3.71489%; left: 65.086%; top: 54.7371%; width: 22.5477%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 2.72864%; left: 51.3715%; top: 59.504%; width: 36.9596%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: w-resize; height: 3.38614%; left: 34.8675%; top: 62.2984%; width: 53.4635%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; left: 51.8364%; top: 65.5859%; height: 3.22176%; width: 36.4947%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 3.38614%; left: 65.3185%; top: 84.8179%; width: 16.0391%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 3.71489%; left: 16.504%; top: 84.8179%; width: 48.3496%;"></div>
+             </section>
+    <section class="img_bg_container">
+        <img class="img" src="https://learner.ta3leem.iq/asset-v1:Ta3leem+1+2022_2023+type@asset+block@كتاب_العلوم_الاول_الابتدائي-min-036.jpg">
+    
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 4.20802%; left: 68.8052%; top: 6.90378%; width: 21.3854%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 3.38614%; left: 64.3887%; top: 13.3144%; width: 23.7099%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 9.96117%; left: 56.2529%; top: 16.4376%; width: 34.8675%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; height: 13.7418%; left: 56.2529%; top: 26.3001%; width: 34.8675%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 10.783%; left: 55.5556%; top: 41.7514%; width: 35.5649%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: s-resize; height: 4.04364%; left: 76.4761%; top: 80.051%; width: 13.2497%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: ne-resize; height: 7.0024%; left: 25.1046%; top: 81.8591%; width: 50.2092%;"></div>
+             </section>
+    <section class="img_bg_container">
+        <img class="img" src="https://learner.ta3leem.iq/asset-v1:Ta3leem+1+2022_2023+type@asset+block@كتاب_العلوم_الاول_الابتدائي-min-037.jpg">
+    
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; left: 36.0298%; top: 4.43814%; height: 3.87927%; width: 27.894%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: nw-resize; top: 9.36941%; height: 2.89301%; left: 77.6383%; width: 12.5523%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: s-resize; height: 3.22176%; left: 40.9112%; top: 12.8213%; width: 49.2794%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: s-resize; height: 4.04364%; left: 61.1344%; top: 73.3116%; width: 27.894%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; height: 3.87927%; left: 51.6039%; top: 77.0922%; width: 37.4245%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: sw-resize; height: 3.38614%; left: 73.4542%; top: 80.8728%; width: 15.5742%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: sw-resize; height: 3.38614%; left: 56.2529%; top: 84.3247%; width: 33.0079%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: nw-resize; height: 3.55051%; left: 38.5867%; top: 81.0372%; width: 34.6351%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 3.38614%; left: 28.8238%; top: 84.3247%; width: 27.894%;"></div>
+             </section>
+    <section class="img_bg_container">
+        <img class="img" src="https://learner.ta3leem.iq/asset-v1:Ta3leem+1+2022_2023+type@asset+block@كتاب_العلوم_الاول_الابتدائي-min-038.jpg">
+    
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: w-resize; height: 3.55051%; left: 35.1%; top: 4.60252%; width: 27.894%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 2.89301%; left: 71.3622%; top: 10.0269%; width: 18.596%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; left: 12.7848%; top: 9.69817%; height: 3.71489%; width: 58.345%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: n-resize; height: 3.87927%; left: 69.9675%; top: 85.9685%; width: 19.9907%;"></div>
+             
+             <div class="voice_box drag_resize" id="moving" onclick="replayAudio('')" style="cursor: move; height: 4.20802%; left: 28.1265%; top: 85.8041%; width: 42.0735%;"></div>
+             </section>
+
+
+
+ <script>
+
+    function playrootVideo(videoId) {
+        var rVideo = document.getElementById(videoId);
+        var pic = document.getElementById('rootw');
+
+        rVideo.play();
+        pic.style.backgroundColor = 'white';
+        rVideo.style.display = "block";
+
+
+
+    }
+</script>
+
+
+<!-- video animation function -->
+    <script>
+function playHiddenVideo(videoId) {
+var video = document.getElementById(videoId);
+
+// Create backdrop overlay
+var backdrop = document.createElement('div');
+backdrop.style.position = 'fixed';
+backdrop.style.top = '0';
+backdrop.style.left = '0';
+backdrop.style.width = '100%';
+backdrop.style.height = '100%';
+backdrop.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; // Adjust the transparency as desired
+backdrop.style.zIndex = '9999';
+document.body.appendChild(backdrop);
+
+// Play the video
+video.play();
+
+// Set video properties
+var videoSize = Math.min(window.innerWidth, window.innerHeight) * 0.6; // Adjust the size as desired
+var videoMargin = videoSize / 2;
+
+// Center the video on the page
+video.style.display = 'block';
+video.style.position = 'fixed';
+video.style.width = videoSize + 'px';
+video.style.height = videoSize + 'px';
+video.style.top = '50%';
+video.style.left = '50%';
+video.style.transform = 'translate(-50%, -50%)';
+video.style.zIndex = '10000';
+
+var closeButton = document.createElement('button');
+closeButton.innerHTML = 'اغلاق';
+closeButton.style.position = 'fixed';
+closeButton.style.top = '10px';
+closeButton.style.right = '10px';
+closeButton.style.zIndex = '10001';
+closeButton.onclick = closeVideo;
+document.body.appendChild(closeButton);
+
+// Listen for the 'ended' event
+
+        function closeVideo() {
+//player.pauseVideo();
+document.body.removeChild(backdrop);
+document.body.removeChild(closeButton);
+video.pause ();
+video.style.display = 'none';
+}
+}
+
+    </script>
+<!-- iframe -->
+    <script>
+function showIframe(id) {
+var iframe = document.getElementById(id);
+
+// Create backdrop overlay
+var backdrop = document.createElement('div');
+backdrop.style.position = 'fixed';
+backdrop.style.top = '0';
+backdrop.style.left = '0';
+backdrop.style.width = '100%';
+backdrop.style.height = '100%';
+backdrop.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+backdrop.style.zIndex = '9999';
+document.body.appendChild(backdrop);
+var closeButton = document.createElement('button');
+closeButton.innerHTML = 'اغلاق';
+closeButton.style.position = 'fixed';
+closeButton.style.top = '10px';
+closeButton.style.right = '10px';
+closeButton.style.zIndex = '10001';
+closeButton.onclick = closeIframe;
+document.body.appendChild(closeButton);
+
+// Center the iframe on the page
+iframe.style.display = 'block';
+iframe.style.position = 'fixed';
+iframe.style.top = '50%';
+iframe.style.left = '50%';
+iframe.style.width = '95%';
+iframe.style.height = '95%';
+iframe.style.transform = 'translate(-50%, -50%)';
+iframe.style.zIndex = '10000';
+// Function to close the iframe and remove the backdrop
+function closeIframe() {
+//player.pauseVideo();
+document.body.removeChild(backdrop);
+document.body.removeChild(closeButton);
+iframe.style.display = 'none';
+}
+
+// Listen for the 'ended' event on the iframe's contentWindow
+    closeButton.addEventListener('click', closeIframe);
+}
+
+    </script>
+    <script>
+        function resizeBackgroundImages() {
+            // Get all elements with class 'img'
+            let imgElements = document.querySelectorAll('.img_fr');
+            // Loop through each element
+            imgElements.forEach(function(element) {
+                // Get the height and width of the element
+                let height = element.offsetHeight;
+                let width = element.offsetWidth;
+                // Get all elements with class 'row'
+                let rowElements = document.querySelectorAll('.img_bg_container');
+                // Loop through each element
+                rowElements.forEach(function(rowElement) {
+                // Set the background size of the element to the height and width of the 'img' element
+                rowElement.style.backgroundSize = width + "px " + height + "px";
+                });
+            });
+        }
+        window.addEventListener('load', resizeBackgroundImages);
+    </script>
+<!-- pictures script -->
+    <script>
+            function showPictureWithAudio(imageId, audioId) {
+    // Create backdrop overlay
+    var backdrop = document.createElement('div');
+    backdrop.style.position = 'fixed';
+    backdrop.style.top = '0';
+    backdrop.style.left = '0';
+    backdrop.style.width = '100%';
+    backdrop.style.height = '100%';
+    backdrop.style.backgroundColor = 'rgba(0, 0, 0, 0.95)';
+    backdrop.style.zIndex = '9999';
+    document.body.appendChild(backdrop);
+
+    // Get image and audio elements by ID
+    var image = document.getElementById(imageId);
+    var audio = document.getElementById(audioId);
+
+    // Set image styles
+    image.style.display = 'none';
+    image.style.position = 'fixed';
+    image.style.top = '50%';
+    image.style.left = '50%';
+    image.style.transform = 'translate(-50%, -50%)';
+    image.style.zIndex = '10000';
+
+    // Event listener for audio ended
+        function close_audio() {
+            // Hide the image
+            image.style.display = 'none';
+
+            // Remove the backdrop
+            document.body.removeChild(backdrop);
+
+            audio.pause
+
+            document.body.removeChild(closeButton);
+
+        };
+
+    // Event listener for audio play
+    audio.addEventListener('play', function() {
+        // Show the image
+        image.style.display = 'block';
+    });
+
+    // Play the audio
+    audio.play();
+
+    var closeButton = document.createElement('button');
+    closeButton.innerHTML = 'اغلاق';
+    closeButton.style.position = 'fixed';
+    closeButton.style.top = '10px';
+    closeButton.style.right = '10px';
+    closeButton.style.zIndex = '10001';
+    closeButton.onclick = close_audio;
+    document.body.appendChild(closeButton);
+        }
+
+
+
+
+
+    </script>
+    <!-- vioce scripts -->
+    <script>
+        function replayAudio(id) {
+        // Pause all audio elements
+        var audioElements = document.getElementsByTagName('audio');
+        for (var i = 0; i < audioElements.length; i++) {
+            var audio = audioElements[i];
+            if (audio !== null && audio.id !== id) {
+            audio.pause();
+            }
+        }
+
+        // Replay the selected audio
+        var selectedAudio = document.getElementById(id);
+        if (selectedAudio !== null) {
+            selectedAudio.currentTime = 0;
+            selectedAudio.play();
+        }
+        }
+
+    </script>
+
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/tgs-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@1.5.7/dist/lottie-player.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+
+</html>
